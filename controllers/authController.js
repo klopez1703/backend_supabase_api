@@ -2,7 +2,7 @@ const jwt = require('jsonwebtoken');
 const bcrypt = require('bcryptjs');
 
 const users = [
-  { id: 1, username: 'kevin', password: bcrypt.hashSync('123456', 10) }
+  { id: 1, username: 'admin', password: bcrypt.hashSync('admin1234', 10) }
 ];
 
 exports.login = async (req, res) => {
