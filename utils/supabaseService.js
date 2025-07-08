@@ -4,7 +4,7 @@ require('dotenv').config();
 const supabase = createClient(process.env.SUPABASE_URL, process.env.SUPABASE_KEY);
 
 // Nombres exactos de tus tablas en Supabase
-const tablas = ['TABLE_BASE_1', 'TABLE_BASE_2', 'TABLE_BASE_3', 'TABLE_BASE_4', 'TABLE_BASE_5', 'TABLE_BASE_6', 'TABLE_BASE_7'];
+const tablas = ['TABLE_BASE_1', 'TABLE_BASE_2', 'TABLE_BASE_3', 'TABLE_BASE_4', 'TABLE_BASE_5'];
 
 (async () => {
   const { data, error } = await supabase.from(tablas[0]).select('*').limit(1);
